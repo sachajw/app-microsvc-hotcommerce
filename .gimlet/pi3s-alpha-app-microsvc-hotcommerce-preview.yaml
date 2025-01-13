@@ -11,8 +11,9 @@ values:
   gitSha: '{{ .SHA }}'
   image:
     registry: public
-    repository: nginx
     strategy: static
     tag: "1.27"
+  ingress:
+    host: hotcommerce.pangarabbit.com
   resources:
     ignoreLimits: true
